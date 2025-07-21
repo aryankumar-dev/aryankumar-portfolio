@@ -28,7 +28,7 @@ function Projects() {
               title="PrepYatra"
               description="AI-integrated job preparation platform for jobseekers using Node.js, Express, React, and MongoDB. Features include an AI chatbot for interview prep, recruiter details, interview schedules, study tracking with prep logs, and top tech questions. AI helps with instant guidance, answering job-related queries, and providing resources for effective preparation."
               ghLink="https://github.com/aryankumar-dev/prepyatra"
-              demoLink="https://chatify-49.web.app/"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
