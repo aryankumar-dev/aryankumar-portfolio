@@ -1,4 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --primary: 271 60% 62%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 271 60% 62%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 262 30% 8%;
+    --foreground: 0 0% 98%;
+    --card: 262 27% 12%;
+    --card-foreground: 0 0% 98%;
+    --primary: 271 60% 62%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 262 20% 18%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 262 20% 18%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 262 20% 18%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 262 20% 20%;
+    --input: 262 20% 20%;
+    --ring: 271 60% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Raleway", serif !important;
