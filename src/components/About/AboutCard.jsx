@@ -21,15 +21,16 @@ function AboutCard() {
             degree in Computer Science.
             <br />
             I have{" "}
-            <span className="purple">1 year of professional experience</span>{" "}
-            as a Full Stack Web Developer at{" "}
-            <span className="purple">Protolab Services</span>.
+            <span className="purple">2 years of professional experience</span>{" "}
+            as a Full Stack Web Developer, most recently at{" "}
+            <span className="purple">Gravity Engineering Services</span>.
             <br />
             My core skills revolve around{" "}
             <span className="purple">
               MERN Stack (MongoDB, Express.js, React.js, Node.js)
             </span>
-            , and <span className="purple">Python</span> — especially for
+            , <span className="purple">Next.js</span>, and{" "}
+            <span className="purple">Python</span> — especially for
             backend development and experimenting with{" "}
             <span className="purple">Generative AI</span> and automation.
             <br />

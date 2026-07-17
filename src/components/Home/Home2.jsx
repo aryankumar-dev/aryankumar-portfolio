@@ -1,4 +1,4 @@
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.jpeg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -34,11 +34,13 @@ function Home2() {
               </i>
               <br />
               <br />
-              I am a <b className="purple">MERN Stack Developer</b> who
-              specializes in building full stack applications using the{" "}
+              I have <b className="purple">2 years of professional
+              experience</b> as a{" "}
+              <b className="purple">MERN Stack Developer</b>, specializing in
+              building full stack applications using the{" "}
               <i>
                 <b className="purple">MERN stack</b> (MongoDB, Express,
-                React, Node.js).
+                React, Node.js) and <b className="purple">Next.js</b>.
               </i>
               <br />
               <br />

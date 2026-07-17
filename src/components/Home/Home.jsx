@@ -1,6 +1,7 @@
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
+import Skills from "./Skills";
 import Type from "./Type";
 
 function Home() {
@@ -39,6 +40,7 @@ function Home() {
         </div>
       </div>
       <Home2 />
+      <Skills />
     </section>
   );
 }
