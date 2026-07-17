@@ -15,6 +15,7 @@ const NAV_LINKS = [
   { to: "/", label: "Home", icon: AiOutlineHome },
   { to: "/about", label: "About", icon: AiOutlineUser },
   { to: "/project", label: "Projects", icon: AiOutlineFundProjectionScreen },
+  { to: "/experience", label: "Experience", icon: AiOutlineFundProjectionScreen },
   { to: "/resume", label: "Resume", icon: CgFileDocument },
   { to: "/blog", label: "Blog", icon: AiOutlineFundProjectionScreen },
 ];
@@ -27,8 +28,23 @@ function NavBar() {
     function handleScroll() {
       setIsScrolled(window.scrollY >= SCROLL_THRESHOLD);
     }
+
+    function handleResize() {
+      if (window.innerWidth >= 768) {
+        setIsOpen(false);
+      }
+    }
+
+    handleScroll();
+    handleResize();
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
@@ -53,7 +69,7 @@ function NavBar() {
         </button>
 
         <div
-          className={`${isOpen ? "flex" : "hidden"} absolute left-0 right-0 top-full flex-col gap-1 bg-[#181a27] px-4 py-4 md:static md:flex md:flex-row md:items-center md:gap-2 md:bg-transparent md:p-0`}
+          className={`${isOpen ? "flex" : "hidden"} absolute left-0 right-0 top-full flex-col gap-1 bg-[#181a27] px-4 py-4 md:static md:flex md:flex-row md:items-center md:gap-2 md:bg-transparent md:p-0 md:relative md:w-auto`}
         >
           {NAV_LINKS.map(({ to, label, icon: Icon }) => (
             <Link

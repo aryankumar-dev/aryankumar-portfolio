@@ -1,32 +1,26 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 function ProjectCards({ imgPath, title, description, ghLink, demoLink, isBlog = false }) {
   return (
-    <Card className="project-card-view flex h-full flex-col">
+    <div className="project-card-view">
       <img src={imgPath} alt={title} className="card-img-top" />
-      <CardContent className="flex flex-1 flex-col p-4">
-        <h3 className="mb-2 text-lg font-semibold">{title}</h3>
-        <p className="mb-4 flex-1 text-justify">{description}</p>
-        <div className="flex flex-wrap gap-2">
-          <Button asChild>
-            <a href={ghLink} target="_blank" rel="noopener noreferrer">
-              <BsGithub /> {isBlog ? "Blog" : "GitHub"}
-            </a>
-          </Button>
+      <div className="project-card-content">
+        <h3 className="project-card-title">{title}</h3>
+        <p className="project-card-description">{description}</p>
+        <div className="project-card-actions">
+          <a href={ghLink} target="_blank" rel="noopener noreferrer" className="project-card-btn">
+            <BsGithub /> {isBlog ? "Blog" : "GitHub"}
+          </a>
 
           {!isBlog && demoLink && (
-            <Button asChild>
-              <a href={demoLink} target="_blank" rel="noopener noreferrer">
-                <CgWebsite /> Demo
-              </a>
-            </Button>
+            <a href={demoLink} target="_blank" rel="noopener noreferrer" className="project-card-btn">
+              <CgWebsite /> Demo
+            </a>
           )}
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 }
 
