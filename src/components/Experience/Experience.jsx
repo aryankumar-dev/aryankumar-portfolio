@@ -46,7 +46,7 @@ export function ExperienceTimeline() {
             )}
           </div>
 
-          <div className="flex-1 pb-10 last:pb-0">
+          <div className="flex-1 pb-16 last:pb-0">
             <div className="group rounded-xl border border-[#be50f4]/40 bg-gradient-to-br from-[#1a1a2e] to-[#16213e] p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-[#be50f4] hover:shadow-xl hover:shadow-[#be50f4]/20 sm:p-6">
               <div className="mb-4 flex flex-col justify-between gap-3 md:flex-row md:items-start">
                 <div className="flex-1">

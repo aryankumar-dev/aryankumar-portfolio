@@ -542,6 +542,21 @@ button:focus {
   background-image: var(--section-background-color) !important;
 }
 
+.experience-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  min-height: 100vh;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+@media (max-width: 767px) {
+  .experience-section {
+    padding-top: 120px !important;
+  }
+}
+
 .project-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
