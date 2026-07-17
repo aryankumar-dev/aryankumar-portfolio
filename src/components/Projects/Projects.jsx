@@ -7,6 +7,7 @@ import jobboard from "../../Assets/Projects/jobboard.png";
 import eductionalwebsite from "../../Assets/Projects/eductionalwebsite.png";
 import fitforge from "../../Assets/Projects/fitforge.png";
 import opentalent from "../../Assets/Projects/opentalent.png";
+import scansmatter from "../../Assets/Projects/scansmatter.png";
 
 const PROJECTS = [
   {
@@ -73,7 +74,7 @@ const PROJECTS = [
     demoLink: "https://weather-now-navy.vercel.app",
   },
   {
-    imgPath: eductionalwebsite,
+    imgPath: scansmatter,
     title: "ScansMatter",
     description:
       "ScansMatter is a web platform built with PHP and Laravel, providing a structured, database-driven experience for its users.",

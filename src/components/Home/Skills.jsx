@@ -5,6 +5,7 @@ import {
   DiPython,
   DiJava,
   DiGit,
+  DiPhp,
 } from "react-icons/di";
 import {
   SiReact,
@@ -17,6 +18,7 @@ import {
   SiOpenai,
   SiGithub,
   SiDocker,
+  SiLaravel,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { BsStars, BsRobot } from "react-icons/bs";
@@ -43,6 +45,8 @@ const SKILL_GROUPS = [
       { icon: SiExpress, label: "Express.js" },
       { icon: SiMongodb, label: "MongoDB" },
       { icon: SiMysql, label: "MySQL" },
+      { icon: DiPhp, label: "PHP" },
+      { icon: SiLaravel, label: "Laravel" },
       { icon: TbApi, label: "RESTful APIs" },
       { icon: SiJsonwebtokens, label: "JWT Authentication" },
     ],
