@@ -353,12 +353,13 @@ button:focus {
 
 .home-social-icons {
   position: relative !important;
-  display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 50px !important;
+  height: 50px !important;
   text-align: center !important;
-  font-size: 1.2em !important;
-  line-height: 2em !important;
+  font-size: 1.6em !important;
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
@@ -748,16 +749,20 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: rgba(147, 76, 206, 0.28) !important;
+  border: 1px solid rgba(162, 77, 211, 0.4) !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
+  transition: 0.3s !important;
+  color: #fff !important;
 }
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #a239ca !important;
+  border-color: #a239ca !important;
+  box-shadow: 0 0 10px rgba(162, 57, 202, 0.6) !important;
 }
 .fork-btn-inner::after {
   display: none !important;

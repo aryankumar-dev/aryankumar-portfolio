@@ -1,4 +1,5 @@
 import Particle from "../Particle";
+import { FaBriefcase, FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 
 const EXPERIENCES = [
   {
@@ -36,39 +37,46 @@ function Experience() {
           Here are the companies I've worked with and the impact I've made.
         </p>
 
-        <div className="flex flex-col gap-8 pb-4">
-          {EXPERIENCES.map((exp, index) => (
-            <div
-              key={index}
-              className="rounded-lg border border-[#be50f4] bg-gradient-to-r from-[#1a1a2e] to-[#16213e] p-6 shadow-lg transition-all hover:shadow-xl hover:shadow-[#be50f4]/20"
-            >
-              <div className="mb-4 flex flex-col justify-between md:flex-row md:items-start">
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-white md:text-2xl">
-                    {exp.title}
-                  </h3>
-                  <p className="mt-1 text-lg text-purple-400">
-                    <strong>{exp.company}</strong>
-                  </p>
-                  <p className="text-sm text-gray-400">
-                    {exp.location}
-                  </p>
-                </div>
-                <p className="mt-3 text-right text-sm font-semibold text-purple-300 md:mt-0">
-                  {exp.duration}
-                </p>
-              </div>
+        <div className="relative mt-10 flex flex-col gap-10 pb-4 sm:pl-10">
+          <div className="absolute top-2 bottom-2 left-[15px] hidden w-px bg-gradient-to-b from-[#be50f4] via-[#be50f4]/40 to-transparent sm:block" />
 
-              <ul className="space-y-3">
-                {exp.responsibilities.map((resp, idx) => (
-                  <li key={idx} className="flex gap-3 text-gray-300">
-                    <span className="mt-1 flex-shrink-0 text-purple-400">
-                      ▸
-                    </span>
-                    <span className="text-justify">{resp}</span>
-                  </li>
-                ))}
-              </ul>
+          {EXPERIENCES.map((exp, index) => (
+            <div key={index} className="relative">
+              <span className="absolute -left-10 top-2 hidden h-8 w-8 items-center justify-center rounded-full border-2 border-[#be50f4] bg-[#1a1a2e] text-purple-300 shadow-[0_0_10px_rgba(190,80,244,0.5)] sm:flex">
+                <FaBriefcase className="text-sm" />
+              </span>
+
+              <div className="group rounded-xl border border-[#be50f4]/40 bg-gradient-to-br from-[#1a1a2e] to-[#16213e] p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-[#be50f4] hover:shadow-xl hover:shadow-[#be50f4]/20">
+                <div className="mb-4 flex flex-col justify-between gap-3 md:flex-row md:items-start">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-white md:text-2xl">
+                      {exp.title}
+                    </h3>
+                    <p className="mt-1 text-lg font-semibold text-purple-400">
+                      {exp.company}
+                    </p>
+                    <p className="mt-1 flex items-center gap-1.5 text-sm text-gray-400">
+                      <FaMapMarkerAlt className="text-purple-400/80" />
+                      {exp.location}
+                    </p>
+                  </div>
+                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-[#be50f4]/50 bg-[#be50f4]/10 px-3 py-1 text-xs font-semibold text-purple-300 md:text-sm">
+                    <FaCalendarAlt />
+                    {exp.duration}
+                  </span>
+                </div>
+
+                <ul className="space-y-3">
+                  {exp.responsibilities.map((resp, idx) => (
+                    <li key={idx} className="flex gap-3 text-gray-300">
+                      <span className="mt-1 flex-shrink-0 text-purple-400">
+                        ▸
+                      </span>
+                      <span className="text-justify">{resp}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
