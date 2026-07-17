@@ -1,5 +1,6 @@
 import myImg from "../../Assets/avatar.jpeg";
 import Tilt from "react-parallax-tilt";
+import Skills from "./Skills";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -64,6 +65,9 @@ function Home2() {
             </Tilt>
           </div>
         </div>
+
+        <Skills />
+
         <div className="home-about-social w-full">
           <h1>FIND ME ON</h1>
           <p>

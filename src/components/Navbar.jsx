@@ -8,12 +8,14 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { BsStars } from "react-icons/bs";
 
 const SCROLL_THRESHOLD = 20;
 
 const NAV_LINKS = [
   { to: "/", label: "Home", icon: AiOutlineHome },
   { to: "/about", label: "About", icon: AiOutlineUser },
+  { to: "/#skills", label: "Skills", icon: BsStars },
   { to: "/project", label: "Projects", icon: AiOutlineFundProjectionScreen },
   { to: "/experience", label: "Experience", icon: AiOutlineFundProjectionScreen },
   { to: "/resume", label: "Resume", icon: CgFileDocument },

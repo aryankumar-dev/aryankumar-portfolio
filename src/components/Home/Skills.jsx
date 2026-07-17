@@ -62,42 +62,41 @@ const SKILL_GROUPS = [
   },
 ];
 
-function Skills() {
+function Skills({ standalone = false }) {
   return (
-    <div className="skills-section" id="skills">
-      <div className="mx-auto max-w-6xl px-4 py-16">
-        <h1 className="project-heading text-center">
-          My <strong className="purple">Skills</strong>
-        </h1>
-        <p className="mx-auto max-w-xl text-center text-white/70">
-          Technologies and tools I use to design, build, and ship
-          intelligent full-stack products.
-        </p>
+    <div
+      className={`skills-section w-full ${standalone ? "mx-auto max-w-6xl px-4 py-16" : "py-16"}`}
+      id="skills"
+    >
+      <h1 className="project-heading text-center">
+        My <strong className="purple">Skills</strong>
+      </h1>
+      <p className="mx-auto max-w-xl text-center text-white/70">
+        Technologies and tools I use to design, build, and ship intelligent
+        full-stack products.
+      </p>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {SKILL_GROUPS.map((group) => (
-            <div key={group.title} className="skill-card group">
-              <div className="skill-card-glow" aria-hidden="true" />
-              <div className="relative z-10">
-                <h3 className="text-xl font-bold text-white">
-                  {group.title}
-                </h3>
-                <p className="mb-5 mt-1 text-sm text-white/50">
-                  {group.tagline}
-                </p>
+      <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+        {SKILL_GROUPS.map((group) => (
+          <div key={group.title} className="skill-card group">
+            <div className="skill-card-glow" aria-hidden="true" />
+            <div className="relative z-10">
+              <h3 className="text-xl font-bold text-white">{group.title}</h3>
+              <p className="mb-5 mt-1 text-sm text-white/50">
+                {group.tagline}
+              </p>
 
-                <div className="flex flex-wrap gap-2.5">
-                  {group.skills.map(({ icon: Icon, label }) => (
-                    <span key={label} className="skill-chip">
-                      <Icon className="skill-chip-icon" />
-                      {label}
-                    </span>
-                  ))}
-                </div>
+              <div className="flex flex-wrap gap-2.5">
+                {group.skills.map(({ icon: Icon, label }) => (
+                  <span key={label} className="skill-chip">
+                    <Icon className="skill-chip-icon" />
+                    {label}
+                  </span>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
