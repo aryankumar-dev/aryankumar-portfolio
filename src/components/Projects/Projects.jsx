@@ -6,6 +6,7 @@ import weather from "../../Assets/Projects/weather.png";
 import jobboard from "../../Assets/Projects/jobboard.png";
 import eductionalwebsite from "../../Assets/Projects/eductionalwebsite.png";
 import fitforge from "../../Assets/Projects/fitforge.png";
+import opentalent from "../../Assets/Projects/opentalent.png";
 
 const PROJECTS = [
   {
@@ -55,6 +56,13 @@ const PROJECTS = [
       "FitForge AI is an AI-powered fitness companion that helps users create personalized workout plans, track progress, and stay motivated with smart recommendations and an intuitive experience.",
     ghLink: "https://github.com/aryankumar-dev/FitForge-AI",
     demoLink: "https://fit-forge-ai-ivory.vercel.app/",
+  },
+  {
+    imgPath: opentalent,
+    title: "OpenTalent",
+    description:
+      "OpenTalent is a talent discovery and hiring platform that connects recruiters with skilled professionals, streamlining the process of finding and evaluating top talent.",
+    demoLink: "https://www.opentalent.in/",
   },
   {
     imgPath: weather,

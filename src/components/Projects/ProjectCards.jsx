@@ -9,9 +9,11 @@ function ProjectCards({ imgPath, title, description, ghLink, demoLink, isBlog = 
         <h3 className="project-card-title">{title}</h3>
         <p className="project-card-description">{description}</p>
         <div className="project-card-actions">
-          <a href={ghLink} target="_blank" rel="noopener noreferrer" className="project-card-btn">
-            <BsGithub /> {isBlog ? "Blog" : "GitHub"}
-          </a>
+          {ghLink && (
+            <a href={ghLink} target="_blank" rel="noopener noreferrer" className="project-card-btn">
+              <BsGithub /> {isBlog ? "Blog" : "GitHub"}
+            </a>
+          )}
 
           {!isBlog && demoLink && (
             <a href={demoLink} target="_blank" rel="noopener noreferrer" className="project-card-btn">
