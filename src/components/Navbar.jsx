@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../Assets/logo.png";
 import { CgGitFork, CgFileDocument } from "react-icons/cg";
 import {
@@ -8,14 +8,12 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { BsStars } from "react-icons/bs";
 
 const SCROLL_THRESHOLD = 20;
 
 const NAV_LINKS = [
   { to: "/", label: "Home", icon: AiOutlineHome },
   { to: "/about", label: "About", icon: AiOutlineUser },
-  { to: "/#skills", label: "Skills", icon: BsStars },
   { to: "/project", label: "Projects", icon: AiOutlineFundProjectionScreen },
   { to: "/experience", label: "Experience", icon: AiOutlineFundProjectionScreen },
   { to: "/resume", label: "Resume", icon: CgFileDocument },
@@ -71,23 +69,26 @@ function NavBar() {
         </button>
 
         <div
-          className={`${isOpen ? "flex" : "hidden"} absolute left-0 right-0 top-full flex-col gap-1 bg-[#181a27] px-4 py-4 md:static md:flex md:flex-row md:items-center md:gap-2 md:bg-transparent md:p-0 md:relative md:w-auto`}
+          className={`${isOpen ? "flex" : "hidden"} nav-menu absolute left-0 right-0 top-full flex-col gap-1 px-4 py-4 md:static md:flex md:flex-row md:items-center md:gap-1 md:p-0 md:w-auto`}
         >
           {NAV_LINKS.map(({ to, label, icon: Icon }) => (
-            <Link
+            <NavLink
               key={to}
               to={to}
+              end={to === "/"}
               onClick={() => setIsOpen(false)}
-              className="nav-link"
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "nav-link-active" : ""}`
+              }
             >
-              <Icon className="-mb-0.5 inline" /> {label}
-            </Link>
+              <Icon className="nav-link-icon" /> {label}
+            </NavLink>
           ))}
           <a
             href="https://github.com/aryankumar-dev/aryankumar-portfolio"
             target="_blank"
             rel="noopener noreferrer"
-            className="fork-btn-inner mt-2 inline-flex items-center justify-center gap-1 rounded md:ml-4 md:mt-0"
+            className="fork-btn-inner mt-2 inline-flex items-center justify-center gap-1.5 rounded-full md:ml-3 md:mt-0"
           >
             <CgGitFork className="text-lg" /> <AiFillStar className="text-base" />
           </a>

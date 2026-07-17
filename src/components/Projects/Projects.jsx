@@ -72,6 +72,13 @@ const PROJECTS = [
     ghLink: "https://github.com/aryankumar-dev/Weather-Now",
     demoLink: "https://weather-now-navy.vercel.app",
   },
+  {
+    imgPath: eductionalwebsite,
+    title: "ScansMatter",
+    description:
+      "ScansMatter is a web platform built with PHP and Laravel, providing a structured, database-driven experience for its users.",
+    demoLink: "https://scansmatter.com/home",
+  },
 ];
 
 function Projects() {
