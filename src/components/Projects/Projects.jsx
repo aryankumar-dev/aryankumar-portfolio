@@ -5,6 +5,7 @@ import moodify from "../../Assets/Projects/moodify.png";
 import weather from "../../Assets/Projects/weather.png";
 import jobboard from "../../Assets/Projects/jobboard.png";
 import eductionalwebsite from "../../Assets/Projects/eductionalwebsite.png";
+import fitforge from "../../Assets/Projects/fitforge.png";
 
 const PROJECTS = [
   {
@@ -46,6 +47,14 @@ const PROJECTS = [
       "This is a Kanban board project built with Node.js, Express, React, and MongoDB. It includes secure JWT authentication for login and signup, along with email notifications for user activities. Users can easily create, update, and manage tasks across boards with a smooth drag-and-drop interface and responsive design.",
     ghLink: "https://github.com/aryankumar-dev/kanban-board",
     demoLink: "https://kanban-board-eight-mu.vercel.app/",
+  },
+  {
+    imgPath: fitforge,
+    title: "FitForge AI",
+    description:
+      "FitForge AI is an AI-powered fitness companion that helps users create personalized workout plans, track progress, and stay motivated with smart recommendations and an intuitive experience.",
+    ghLink: "https://github.com/aryankumar-dev/FitForge-AI",
+    demoLink: "https://fit-forge-ai-ivory.vercel.app/",
   },
   {
     imgPath: weather,
