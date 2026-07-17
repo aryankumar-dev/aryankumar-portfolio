@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { AiOutlineDownload } from "react-icons/ai";
 
 const previewLink =
-  "https://drive.google.com/file/d/1R_x1iSiyFFB2WMqIzwiN84X00SUdtK3R/preview";
+  "https://drive.google.com/file/d/1nWcunfnokmN4pWpzmYKIQq9-b8JoSyPm/preview";
 const downloadLink =
-  "https://drive.google.com/uc?export=download&id=1R_x1iSiyFFB2WMqIzwiN84X00SUdtK3R";
+  "https://drive.google.com/uc?export=download&id=1nWcunfnokmN4pWpzmYKIQq9-b8JoSyPm";
 
 function DownloadButton() {
   return (
