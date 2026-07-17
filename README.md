@@ -1,15 +1,36 @@
-👋 Let Me Introduce Myself
+# Aryan Kumar — Portfolio
 
-I fell in love with programming and have been building exciting things ever since… 🤷‍♂️
+My personal portfolio website, built with React, Vite, Tailwind CSS, and shadcn/ui.
 
-I am fluent in classics like C++, JavaScript, and Python.
+**Live:** [aryankumar-portfolio.vercel.app](https://aryankumar-portfolio.vercel.app/)
 
-I am a MERN Stack Developer, specializing in full-stack applications using MongoDB, Express.js, React.js, and Node.js.
+## Sections
 
-I’m also passionate about Generative AI and integrate Large Language Models (LLMs) into my projects to build powerful, intelligent web apps.
+- **Home** — intro, profile photo, and a categorized skills breakdown (Languages, Technical, AI & Tools)
+- **About** — bio, skills, work experience timeline, and tools I use
+- **Projects** — recent work with live demo links and screenshots
+- **Experience** — full work history with company links
+- **Resume** — embedded viewer with a download option
+- **Blog** — writing on web development, Python, and AI
 
-Whenever possible, I combine my backend skills in Node.js with modern frameworks like React.js, Next.js, and Python-based AI tools to push the limits of web applications.
+## Tech Stack
 
-🚀 Skills & Technologies
+- **Frontend:** React, React Router, Vite
+- **Styling:** Tailwind CSS, shadcn/ui
+- **Icons:** react-icons
+- **Extras:** tsparticles (background effects), react-parallax-tilt, typewriter-effect
 
-<p align="center"> <img src="https://img.shields.io/badge/Java-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/Python-yellow?style=for-the-badge&logo=python" /> <img src="https://img.shields.io/badge/Node.js-green?style=for-the-badge&logo=node.js" /> <img src="https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react" /> <img src="https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js" /><br><br> <img src="https://img.shields.io/badge/Express.js-grey?style=for-the-badge" /> <img src="https://img.shields.io/badge/Laravel-red?style=for-the-badge&logo=laravel" /> <img src="https://img.shields.io/badge/Git-orange?style=for-the-badge&logo=git" /> <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github" /> <img src="https://img.shields.io/badge/MySQL-blue?style=for-the-badge&logo=mysql" /> <img src="https://img.shields.io/badge/MongoDB-green?style=for-the-badge&logo=mongodb" /> <img src="https://img.shields.io/badge/Generative%20AI-purple?style=for-the-badge" /> </p>
+## Getting Started
+
+```bash
+npm install
+npm run dev       # start the dev server
+npm run build     # production build
+npm run preview   # preview the production build
+npm run lint       # run eslint
+```
+
+## Contact
+
+- GitHub: [@aryankumar-dev](https://github.com/aryankumar-dev)
+- LinkedIn: [aryankumar-dev](https://www.linkedin.com/in/aryankumar-dev)
